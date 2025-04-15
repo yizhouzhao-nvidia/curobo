@@ -50,7 +50,7 @@ def _get_version():
     import pathlib
 
     root = pathlib.Path(__file__).resolve().parent.parent.parent
-    if (root / ".git").exists() and not (root / ".git/shallow").exists():
+    if False: #(root / ".git").exists() and not (root / ".git/shallow").exists():
         # Third Party
         import setuptools_scm
 
